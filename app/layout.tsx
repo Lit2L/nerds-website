@@ -1,38 +1,38 @@
-import "@/styles/globals.css";
+import '@/styles/globals.css'
 
-import { fontGeist, fontHeading, fontSans, fontUrban } from "@/assets/fonts";
-import { SessionProvider } from "next-auth/react";
-import { ThemeProvider } from "next-themes";
+import { fontGeist, fontHeading, fontSans, fontUrban } from '@/assets/fonts'
+import { SessionProvider } from 'next-auth/react'
+import { ThemeProvider } from 'next-themes'
 
-import { cn, constructMetadata } from "@/lib/utils";
-import { Toaster } from "@/components/ui/sonner";
-import { Analytics } from "@/components/analytics";
-import ModalProvider from "@/components/modals/providers";
-import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { cn, constructMetadata } from '@/lib/utils'
+import { Toaster } from '@/components/ui/sonner'
+import { Analytics } from '@/components/analytics'
+import ModalProvider from '@/components/modals/providers'
+import { TailwindIndicator } from '@/components/tailwind-indicator'
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
-export const metadata = constructMetadata();
+export const metadata = constructMetadata()
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          'min-h-screen overflow-hidden bg-background font-sans antialiased',
           fontSans.variable,
           fontUrban.variable,
           fontHeading.variable,
-          fontGeist.variable,
+          fontGeist.variable
         )}
       >
         <SessionProvider>
           <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
+            attribute='class'
+            defaultTheme='system'
             enableSystem
             disableTransitionOnChange
           >
@@ -44,5 +44,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </SessionProvider>
       </body>
     </html>
-  );
+  )
 }
