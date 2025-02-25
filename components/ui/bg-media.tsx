@@ -74,7 +74,7 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
           ref={mediaRef}
           aria-hidden='true'
           muted
-          className='du pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60 blur-sm transition-opacity duration-300'
+          className='pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60 blur-sm transition-opacity duration-300'
           autoPlay
           loop
           playsInline
