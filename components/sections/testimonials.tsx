@@ -30,13 +30,17 @@ export default function Testimonials() {
                         />
                       </span>
                       <div className=''>
-                        <p className='text-sm font-semibold text-slate-700'>
+                        <p className='text-sm font-semibold text-slate-700 dark:text-white'>
                           {item.name}
                         </p>
-                        <p className='text-sm text-slate-500'>{item.job}</p>
+                        <p className='text-sm text-slate-500 dark:text-white/50'>
+                          {item.job}
+                        </p>
                       </div>
                     </div>
-                    <q className='text-slate-600'>{item.review}</q>
+                    <q className='text-slate-600 dark:text-white/80'>
+                      {item.review}
+                    </q>
                   </div>
                 </div>
               </div>
