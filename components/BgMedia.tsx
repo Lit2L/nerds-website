@@ -2,11 +2,11 @@ import { BackgroundMedia } from './ui/bg-media'
 
 export function BgMediaDemo() {
   return (
-    <div className='absolute w-full overflow-hidden bg-black/60'>
+    <div className='absolute -z-10 w-full overflow-hidden bg-black/30'>
       <BackgroundMedia
         type='video'
         variant='light'
-        src='https://stream.mux.com/r7lSSIOQGJ53l602hU023DiVpk48yMqK2xS2006N4fAQC00.m3u8'
+        src='https://hm2v1jwhss.ufs.sh/f/6Zw2kVOf5iZUQ3vSyHdFbleQ9ZChJkgSMNqx2ArXvtOfI6dV'
       />
     </div>
   )
