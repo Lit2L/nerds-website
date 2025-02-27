@@ -1,4 +1,4 @@
-import { PlansRow } from '@/types'
+import { type PlansRow } from '@/types'
 import { CircleCheck, Info } from 'lucide-react'
 
 import { comparePlans, plansColumns } from '@/config/subscriptions'

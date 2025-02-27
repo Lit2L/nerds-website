@@ -1,10 +1,10 @@
-import Link from "next/link"
-import { Doc } from "contentlayer/generated"
+import Link from 'next/link'
+import { type Doc } from 'contentlayer/generated'
 
-import { docsConfig } from "@/config/docs"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/shared/icons"
+import { docsConfig } from '@/config/docs'
+import { cn } from '@/lib/utils'
+import { buttonVariants } from '@/components/ui/button'
+import { Icons } from '@/components/shared/icons'
 
 interface DocsPagerProps {
   doc: Doc
@@ -18,23 +18,23 @@ export function DocsPager({ doc }: DocsPagerProps) {
   }
 
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div className='flex flex-row items-center justify-between'>
       {pager?.prev && (
         <Link
           href={pager.prev.href}
-          className={cn(buttonVariants({ variant: "outline" }))}
+          className={cn(buttonVariants({ variant: 'outline' }))}
         >
-          <Icons.chevronLeft className="mr-2 size-4" />
+          <Icons.chevronLeft className='mr-2 size-4' />
           {pager.prev.title}
         </Link>
       )}
       {pager?.next && (
         <Link
           href={pager.next.href}
-          className={cn(buttonVariants({ variant: "outline" }), "ml-auto")}
+          className={cn(buttonVariants({ variant: 'outline' }), 'ml-auto')}
         >
           {pager.next.title}
-          <Icons.chevronRight className="ml-2 size-4" />
+          <Icons.chevronRight className='ml-2 size-4' />
         </Link>
       )}
     </div>
@@ -53,11 +53,11 @@ export function getPagerForDoc(doc: Doc) {
       : null
   return {
     prev,
-    next,
+    next
   }
 }
 
-export function flatten(links: { items?}[]) {
+export function flatten(links: { items? }[]) {
   return links.reduce((flat, link) => {
     return flat.concat(link.items ? flatten(link.items) : link)
   }, [])

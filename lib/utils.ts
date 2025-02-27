@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 import { clsx, type ClassValue } from 'clsx'
 import ms from 'ms'
 import { twMerge } from 'tailwind-merge'

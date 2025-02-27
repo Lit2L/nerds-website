@@ -1,7 +1,7 @@
 import {
-  ComputedFields,
   defineDocumentType,
-  makeSource
+  makeSource,
+  type ComputedFields
 } from 'contentlayer2/source-files'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypePrettyCode from 'rehype-pretty-code'

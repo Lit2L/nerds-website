@@ -5,7 +5,7 @@ import { Mdx } from '@/components/content/mdx-components'
 
 import '@/styles/mdx.css'
 
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 import Link from 'next/link'
 
 import { BLOG_CATEGORIES } from '@/config/blog'

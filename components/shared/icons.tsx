@@ -17,8 +17,6 @@ import {
   LayoutPanelLeft,
   LineChart,
   Loader2,
-  LucideIcon,
-  LucideProps,
   MessagesSquare,
   Moon,
   MoreVertical,
@@ -30,7 +28,9 @@ import {
   SunMedium,
   Trash,
   User,
-  X
+  X,
+  type LucideIcon,
+  type LucideProps
 } from 'lucide-react'
 
 export type Icon = LucideIcon

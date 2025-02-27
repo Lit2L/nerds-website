@@ -1,5 +1,7 @@
 import { infos } from '@/config/landing'
 import BentoGrid from '@/components/sections/bentogrid'
+import FeaturesCarousel from '@/components/sections/carousel'
+import CarouselSection from '@/components/sections/carousel'
 import Features from '@/components/sections/features'
 import HeroLanding from '@/components/sections/hero-landing'
 import InfoLanding from '@/components/sections/info-landing'
@@ -11,6 +13,7 @@ export default function IndexPage() {
   return (
     <>
       <HeroLanding />
+      <CarouselSection />
       {/* <PreviewLanding />
       <Powered /> */}
       <BentoGrid />

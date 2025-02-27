@@ -13,8 +13,8 @@ import GradualSpacing from '../ui/gradual-spacing'
 
 export default async function HeroLanding() {
   return (
-    <section className='w-full space-y-6 py-12 sm:py-20 lg:py-20'>
-      <div className='container flex flex-col items-center gap-5 text-center'>
+    <section className='min-h-screen w-full space-y-6 border-4'>
+      <div className='container relative z-10 flex h-[800px] w-full flex-col items-center justify-center gap-6 space-y-6 border-4 border-pink-500 text-center'>
         <Link
           href='https://instagram.com/nerdsfighting'
           className={cn(
@@ -30,23 +30,18 @@ export default async function HeroLanding() {
           <InstagramIcon />
         </Link>
         <GradualSpacing text='NERDS FIGHTING' />
-        {/* <h1 className='text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]'>
-          <span className='text-gradient_indigo-purple font-extrabold'>
-            SaaS Starter
-          </span>
-        </h1> */}
-
+        <BgMediaDemo />
         <p
           className='max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8'
           style={{ animationDelay: '0.35s', animationFillMode: 'forwards' }}
         >
-          One step could change your life. Chill and come on in
+          Come on over to Nerds Fighting and we&apos;ll take you where you need
         </p>
 
-        <div className='absolute top-20 -z-10 w-full opacity-70'>
+        {/* <div className='top-30 absolute -z-10 w-full opacity-70'>
           <BgMediaDemo />
-        </div>
-        <FeatureCarouselDemo />
+        </div> */}
+
         <div
           className='flex justify-center space-x-2 md:space-x-4'
           style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}
@@ -81,11 +76,6 @@ export default async function HeroLanding() {
             </p>
           </Link>
         </div>
-
-        <p className=''>
-          If you&apos;re looking for the best source for kickboxing and martial
-          arts training, then look no further than Nerds Fighting.
-        </p>
       </div>
     </section>
   )

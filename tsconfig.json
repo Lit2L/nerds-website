@@ -12,6 +12,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "types": ["node", "next", "next/types/global"],
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
@@ -24,9 +25,13 @@
         "name": "next"
       }
     ],
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true
   },
   "include": [
+    "video.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

@@ -206,7 +206,9 @@ const GalleryModal = ({
                   <h3 className='text-base font-semibold text-white sm:text-lg md:text-xl'>
                     {selectedItem.title}
                   </h3>
-                  <p className='mt-1 text-xs text-white/80 sm:text-sm'>{selectedItem.desc}</p>
+                  <p className='mt-1 text-xs text-white/80 sm:text-sm'>
+                    {selectedItem.desc}
+                  </p>
                 </div>
               </motion.div>
             </AnimatePresence>
@@ -249,7 +251,8 @@ const GalleryModal = ({
                   setSelectedItem(item)
                 }}
                 style={{
-                  zIndex: selectedItem.id === item.id ? 30 : mediaItems.length - index
+                  zIndex:
+                    selectedItem.id === item.id ? 30 : mediaItems.length - index
                 }}
                 className={`group relative h-8 w-8 flex-shrink-0 cursor-pointer overflow-hidden rounded-lg hover:z-20 sm:h-9 sm:w-9 md:h-10 md:w-10 ${
                   selectedItem.id === item.id
@@ -259,7 +262,12 @@ const GalleryModal = ({
                 initial={{ rotate: index % 2 === 0 ? -15 : 15 }}
                 animate={{
                   scale: selectedItem.id === item.id ? 1.2 : 1,
-                  rotate: selectedItem.id === item.id ? 0 : index % 2 === 0 ? -15 : 15,
+                  rotate:
+                    selectedItem.id === item.id
+                      ? 0
+                      : index % 2 === 0
+                        ? -15
+                        : 15,
                   y: selectedItem.id === item.id ? -8 : 0
                 }}
                 whileHover={{

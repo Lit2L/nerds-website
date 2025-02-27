@@ -10,7 +10,7 @@ import { DashboardTableOfContents } from '@/components/shared/toc'
 
 import '@/styles/mdx.css'
 
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 import { cn, constructMetadata } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'

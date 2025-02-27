@@ -1,3 +1,4 @@
+import { type Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { allDocs } from 'contentlayer/generated'
 
@@ -8,8 +9,6 @@ import { DocsPager } from '@/components/docs/pager'
 import { DashboardTableOfContents } from '@/components/shared/toc'
 
 import '@/styles/mdx.css'
-
-import { Metadata } from 'next'
 
 import { constructMetadata, getBlurDataURL } from '@/lib/utils'
 
