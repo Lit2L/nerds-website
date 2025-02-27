@@ -14,12 +14,6 @@ dependencies:
   '@hookform/resolvers':
     specifier: ^3.9.0
     version: 3.10.0(react-hook-form@7.54.2)
-  '@mux/mux-player':
-    specifier: ^3.3.0
-    version: 3.3.0
-  '@mux/mux-player-react':
-    specifier: ^3.3.0
-    version: 3.3.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
   '@prisma/client':
     specifier: ^5.17.0
     version: 5.22.0(prisma@5.22.0)
@@ -2568,37 +2562,6 @@ packages:
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
-    dev: false
-
-  /@mux/mux-player-react@3.3.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-S+P7shdph+Uj73emLiDoAfDKxHbbzQaqTHmndMXqsNhjfOF0ve7ZF7pLZOAV16UUwBrBDwOQwwmIFwd3wYgY+w==}
-    peerDependencies:
-      '@types/react': ^17.0.0 || ^17.0.0-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
-      '@types/react-dom': '*'
-      react: ^17.0.2 || ^17.0.0-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
-      react-dom: ^17.0.2 || ^17.0.2-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-    dependencies:
-      '@mux/mux-player': 3.3.0
-      '@mux/playback-core': 0.28.3
-      '@types/react': 18.3.3
-      '@types/react-dom': 18.3.0
-      prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    dev: false
-
-  /@mux/mux-player@3.3.0:
-    resolution: {integrity: sha512-/VSOPKBd56QzQzVSjuigS8r6kAMJRuNskEUGqU0o0k37FC7ztLH4Fh85fzhEyWSDHs3krJ1dBLqhJ1eCs8r3sA==}
-    dependencies:
-      '@mux/mux-video': 0.24.3
-      '@mux/playback-core': 0.28.3
-      media-chrome: 4.5.0
-      player.style: 0.1.4
     dev: false
 
   /@mux/mux-video@0.24.3:
