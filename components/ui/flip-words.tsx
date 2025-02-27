@@ -69,7 +69,7 @@ export const FlipWords = ({
           position: 'absolute'
         }}
         className={cn(
-          'md:text-md relative z-10 inline-block items-center justify-center gap-[2px] rounded-full px-2 text-left font-heading text-sm capitalize tracking-widest text-white dark:text-slate-600 lg:text-lg',
+          'text-md relative z-10 inline-block items-center gap-[2px] rounded-full px-2 text-left font-orbitron font-bold capitalize tracking-widest text-blue-500 md:text-lg lg:text-xl',
           className
         )}
         key={currentWord}
@@ -83,7 +83,7 @@ export const FlipWords = ({
               delay: index * 0.08,
               duration: 0.4
             }}
-            className='font-orbitron font-bold'
+            className='font-orbitron text-2xl'
           >
             {letter}
           </motion.span>

@@ -9,7 +9,6 @@ import { Icons } from '@/components/shared/icons'
 import { BgMediaDemo } from '../BgMedia'
 import { FlipWordsComponent } from '../FlipWordsComponent'
 import { InstagramIcon } from '../icons/instagram'
-import { BackgroundCircles } from '../ui/background-circles'
 import GradualSpacing from '../ui/gradual-spacing'
 
 export default async function HeroLanding() {
@@ -31,8 +30,8 @@ export default async function HeroLanding() {
             )}
             target='_blank'
           >
-            <span className='mx-3 text-2xl'>🥊</span>
-            <span className='hidden md:flex'>
+            <span className='mx-3 text-lg md:text-2xl'>🥊</span>
+            <span className='mg:text-sm flex text-xs'>
               Kickboxing & Martial Arts Training
             </span>{' '}
             <InstagramIcon />

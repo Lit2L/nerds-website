@@ -11,17 +11,17 @@ export function FlipWordsComponent() {
     // 'Learn to Strike and Look good doing it',
     // 'Improve Cardio & Conditioning',
     // 'Gain Confidence in Yourself'
-    'Be Bold',
-    'Be New',
-    'Be You',
-    'At NERDS FIGHTING'
+    'Bold',
+    'New',
+    'You'
   ]
 
   return (
     <div className='flex h-10 w-96 items-center justify-center'>
-      <p className='text-center font-heading text-2xl font-bold text-emerald-600 dark:text-emerald-500'>
-        +++
+      <p className='text-center font-orbitron text-2xl font-semibold text-white'>
+        BE
       </p>
+
       <FlipWords words={words} />
     </div>
   )

@@ -18,19 +18,19 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: 'Company',
+    title: 'Home Page',
     items: [
       { title: 'Home', href: '#' },
-      { title: 'Enterprise', href: '#' },
-      { title: 'Terms', href: '/terms' },
-      { title: 'Privacy', href: '/privacy' }
+      { title: 'Pricing', href: '/pricing' },
+      { title: 'Schedule', href: '/schedule' },
+      { title: 'Contact', href: '/contact' }
     ]
   },
   {
-    title: 'Product',
+    title: 'User',
     items: [
-      { title: 'Security', href: '#' },
-      { title: 'Customization', href: '#' },
+      { title: 'Home', href: '/' },
+      { title: 'Dashboard', href: '/dashboard' },
       { title: 'Customers', href: '#' },
       { title: 'Changelog', href: '#' }
     ]
@@ -38,10 +38,10 @@ export const footerLinks: SidebarNavItem[] = [
   {
     title: 'Docs',
     items: [
-      { title: 'Introduction', href: '#' },
-      { title: 'Installation', href: '#' },
-      { title: 'Components', href: '#' },
-      { title: 'Code Blocks', href: '#' }
+      { title: 'Introduction', href: '#' }
+      // { title: 'Installation', href: '#' },
+      // { title: 'Components', href: '#' },
+      // { title: 'Code Blocks', href: '#' }
     ]
   }
 ]

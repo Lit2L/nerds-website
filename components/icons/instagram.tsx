@@ -135,7 +135,7 @@ const InstagramIcon = forwardRef<InstagramIconHandle, InstagramIconProps>(
     return (
       <div
         className={cn(
-          `mx-3 flex cursor-pointer select-none items-center justify-center rounded-md transition-colors duration-200 hover:bg-sky-500`,
+          `mx-3 flex cursor-pointer select-none items-center justify-center rounded-md transition-colors duration-200 hover:bg-blue-600`,
           className
         )}
         onMouseEnter={handleMouseEnter}
