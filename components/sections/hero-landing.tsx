@@ -13,8 +13,8 @@ import GradualSpacing from '../ui/gradual-spacing'
 
 export default async function HeroLanding() {
   return (
-    <section className='min-h-screen w-full space-y-6 border-4'>
-      <div className='container relative z-10 flex h-[800px] w-full flex-col items-center justify-center gap-6 space-y-6 border-4 border-pink-500 text-center'>
+    <section className='min-h-screen w-full border-4'>
+      <div className='container relative z-10 flex h-[800px] w-full flex-col items-center justify-center gap-6 space-y-9 border-4 text-center'>
         <Link
           href='https://instagram.com/nerdsfighting'
           className={cn(
