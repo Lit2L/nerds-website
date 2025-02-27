@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 
-import { fontGeist, fontHeading, fontSans, fontUrban } from '@/assets/fonts'
 import { SessionProvider } from 'next-auth/react'
 import { ThemeProvider } from 'next-themes'
 
@@ -9,6 +8,16 @@ import { Toaster } from '@/components/ui/sonner'
 import { Analytics } from '@/components/analytics'
 import ModalProvider from '@/components/modals/providers'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
+
+import {
+  fontAwakenning,
+  fontCrosstown,
+  fontGeist,
+  fontHeading,
+  fontLongslide,
+  fontOrbitron,
+  fontSans
+} from '../public/fonts'
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -22,17 +31,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body
         className={cn(
-          'min-h-screen overflow-hidden bg-background font-sans antialiased',
+          'min-h-screen w-full overflow-hidden font-sans antialiased',
           fontSans.variable,
-          fontUrban.variable,
+          fontOrbitron.variable,
           fontHeading.variable,
-          fontGeist.variable
+          fontGeist.variable,
+          fontCrosstown.variable,
+          fontAwakenning.variable,
+          fontLongslide.variable
         )}
       >
         <SessionProvider>
           <ThemeProvider
             attribute='class'
-            defaultTheme='system'
+            defaultTheme='dark'
             enableSystem
             disableTransitionOnChange
           >

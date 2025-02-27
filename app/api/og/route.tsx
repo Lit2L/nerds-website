@@ -5,11 +5,11 @@ import { ogImageSchema } from '@/lib/validations/og'
 export const runtime = 'edge'
 
 const interRegular = fetch(
-  new URL('../../../assets/fonts/Inter-Regular.ttf', import.meta.url)
+  new URL('../../../public/fonts/Inter-Regular.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 const interBold = fetch(
-  new URL('../../../assets/fonts/CalSans-SemiBold.ttf', import.meta.url)
+  new URL('../../../public/fonts/CalSans-SemiBold.woff2', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 export async function GET(req: Request) {
@@ -29,7 +29,7 @@ export async function GET(req: Request) {
 
     const fontSize = heading.length > 80 ? '60px' : '80px'
 
-    const githubName = 'mickasmt'
+    const githubName = 'larryll'
 
     return new ImageResponse(
       (
@@ -123,7 +123,7 @@ export async function GET(req: Request) {
                 />
               </svg>
               <div tw='flex ml-2'>
-                github.com/mickasmt/next-saas-stripe-starter
+                github.com/larryll/next-saas-stripe-starter
               </div>
             </div>
           </div>

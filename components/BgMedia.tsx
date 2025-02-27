@@ -2,7 +2,7 @@ import { BackgroundMedia } from './ui/bg-media'
 
 export function BgMediaDemo() {
   return (
-    <div className='absolute -z-10 w-full overflow-hidden bg-black/30'>
+    <div className='absolute -z-10 h-full w-full opacity-50'>
       <BackgroundMedia
         type='video'
         variant='light'

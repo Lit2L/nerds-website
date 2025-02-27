@@ -16,9 +16,9 @@ export const BLOG_CATEGORIES: {
 ]
 
 export const BLOG_AUTHORS = {
-  mickasmt: {
-    name: 'mickasmt',
-    image: '/_static/avatars/mickasmt.png',
+  larryll: {
+    name: 'larryll',
+    image: '/_static/avatars/larryll.png',
     twitter: 'miickasmt'
   },
   shadcn: {

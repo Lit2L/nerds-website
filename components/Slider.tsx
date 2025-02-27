@@ -46,8 +46,8 @@ export function InfiniteSliderHoverSpeed() {
         className='aspect-square w-[300px] rounded-[4px]'
       />
       <video
-        src='/vids/Larry_Michael_mitts_edit.mp4'
-        className='aspect-square w-[300px]'
+        src='/videos/Mitts_Mike_edited_720.mp4'
+        className=''
         loop
         muted
         autoPlay

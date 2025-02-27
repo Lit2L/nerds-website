@@ -17,7 +17,7 @@ export default function GradualSpacing({
   duration = 5,
   delayMultiple = 0.08,
   framerProps = {
-    hidden: { opacity: 0, x: -10 },
+    hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 }
   },
   className
@@ -34,7 +34,7 @@ export default function GradualSpacing({
             variants={framerProps}
             transition={{ duration, delay: i * delayMultiple }}
             className={cn(
-              'text-2xl drop-shadow-sm sm:text-4xl md:text-5xl lg:text-7xl',
+              'font-awakenning text-9xl tracking-widest text-white drop-shadow-sm',
               className
             )}
           >

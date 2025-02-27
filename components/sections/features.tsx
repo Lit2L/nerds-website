@@ -6,19 +6,20 @@ import { HeaderSection } from '@/components/shared/header-section'
 import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 
+import FeatureCarouselDemo from '../FeatureCarouselDemo'
+
 export default function Features() {
   return (
-    <section>
+    <section className='bg-black/50'>
       <div className='pb-6 pt-28'>
         <MaxWidthWrapper>
           <HeaderSection
-            label='Features'
-            title='Discover all features.'
-            subtitle='Harum quae dolore inventore repudiandae? orrupti aut temporibus
-          ariatur.'
+            label='NERDS FIGHTING'
+            title='What We Do.'
+            subtitle='Training Should be fun,  engaging, challenging, and most of all rewarding. We offer a variety of classes and training options to help you reach your goals.'
           />
-
-          <div className='mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3'>
+          <FeatureCarouselDemo />
+          {/* <div className='mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3'>
             {features.map((feature) => {
               const Icon = Icons[feature.icon || 'nextjs']
               return (
@@ -56,7 +57,7 @@ export default function Features() {
                 </div>
               )
             })}
-          </div>
+          </div> */}
         </MaxWidthWrapper>
       </div>
     </section>

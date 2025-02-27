@@ -4,14 +4,14 @@ import { env } from '@/env.mjs'
 const site_url = env.NEXT_PUBLIC_APP_URL
 
 export const siteConfig: SiteConfig = {
-  name: 'NERDs_FIGHTing',
+  name: 'NERDS FIGHTING',
   description:
     'Huntington Beach and Fountain Valley Kickboxing and Martial Arts Training',
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
     twitter: 'https://instagram.com/nerdsfighting',
-    github: 'https://github.com/mickasmt/next-saas-stripe-starter'
+    github: 'https://github.com/larryll/next-saas-stripe-starter'
   },
   mailSupport: 'larryl@nerdsfighting.com'
 }

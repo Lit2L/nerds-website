@@ -13,18 +13,18 @@ type MediaType = 'image' | 'video'
 
 // Update the cva call with these types
 const backgroundVariants = cva(
-  'relative max-h-[900px] w-full min-h-[500px] lg:min-h-[800px]',
+  'relative h-screen max-h-[930px] w-full min-h-[500px] lg:min-h-[600px] ',
   {
     variants: {
       overlay: {
         none: '',
         light:
-          'before:absolute before:inset-0 before:bg-white before:opacity-30 w-full',
+          'before:absolute before:inset-0 before:bg-white before:opacity-30',
         dark: 'before:absolute before:inset-0 before:bg-black before:opacity-30'
       },
       type: {
         image: '',
-        video: '-z-10'
+        video: 'z-10'
       }
     },
     defaultVariants: {
@@ -37,7 +37,6 @@ const backgroundVariants = cva(
 interface BackgroundMediaProps {
   variant?: OverlayVariant
   type?: MediaType
-  speed?: number
   src: string
   alt?: string
 }
@@ -64,7 +63,7 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
 
   const mediaClasses = cn(
     backgroundVariants({ overlay: variant, type }),
-    'overflow-hidden'
+    'overflow-hidden '
   )
 
   const renderMedia = () => {
@@ -74,7 +73,7 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
           ref={mediaRef}
           aria-hidden='true'
           muted
-          className='pointer-events-none absolute inset-0 h-full w-full opacity-100 blur-[2px] transition-opacity duration-300'
+          className='pointer-events-none absolute inset-0 z-0 h-full w-full object-cover blur-[3px] transition-opacity duration-300'
           autoPlay
           loop
           playsInline
@@ -88,13 +87,12 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
         <img
           src={src}
           alt={alt}
-          className='absolute inset-0 h-full w-full rounded-br-[88px] border-4 border-pink-500'
+          className='absolute inset-0 h-full w-full rounded-br-[88px] object-cover'
           loading='eager'
         />
       )
     }
   }
-
   return (
     <div className={mediaClasses}>
       {renderMedia()}
@@ -110,3 +108,5 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
     </div>
   )
 }
+
+export default BackgroundMedia

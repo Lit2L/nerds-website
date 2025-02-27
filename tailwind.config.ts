@@ -62,9 +62,13 @@ const config = {
       },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
-        urban: ['var(--font-urban)', ...fontFamily.sans],
         heading: ['var(--font-heading)', ...fontFamily.sans],
-        geist: ['var(--font-geist)', ...fontFamily.sans]
+        geist: ['var(--font-geist)', ...fontFamily.sans],
+        crosstown: ['var(--font-crosstown)', ...fontFamily.sans],
+        awakenning: ['var(--font-awakenning)', ...fontFamily.sans],
+        longslide: ['var(--font-longslide)', ...fontFamily.sans],
+        genos: ['var(--font-genos)', ...fontFamily.sans],
+        orbitron: ['var(--font-orbitron)', ...fontFamily.sans]
       },
       keyframes: {
         'accordion-down': {

@@ -94,7 +94,7 @@ export function BackgroundCircles({
     <div
       className={clsx(
         'relative flex h-screen w-full items-center justify-center overflow-hidden',
-        'bg-white dark:bg-black/5',
+        // 'bg-gradient-to-br from-slate-950 to-slate-700',
         className
       )}
     >

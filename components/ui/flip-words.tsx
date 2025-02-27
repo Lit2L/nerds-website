@@ -50,7 +50,7 @@ export const FlipWords = ({
           y: 10
         }}
         animate={{
-          opacity: 0.3,
+          opacity: 1,
           y: 0
         }}
         transition={{
@@ -69,7 +69,7 @@ export const FlipWords = ({
           position: 'absolute'
         }}
         className={cn(
-          'md:text-md relative z-10 inline-block rounded-full px-2 text-left font-heading text-sm text-black dark:text-white lg:text-lg',
+          'md:text-md relative z-10 inline-block items-center justify-center gap-[2px] rounded-full px-2 text-left font-heading text-sm capitalize tracking-widest text-white dark:text-slate-600 lg:text-lg',
           className
         )}
         key={currentWord}
@@ -83,7 +83,7 @@ export const FlipWords = ({
               delay: index * 0.08,
               duration: 0.4
             }}
-            className=''
+            className='font-orbitron font-bold'
           >
             {letter}
           </motion.span>

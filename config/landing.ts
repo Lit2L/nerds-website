@@ -55,43 +55,40 @@ export const infos: InfoLdg[] = [
 export const features: FeatureLdg[] = [
   {
     title: 'Feature 1',
-    description:
-      'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Take A Journey That Changes All Journeys.',
     link: '/',
     icon: 'nextjs'
   },
   {
     title: 'Feature 2',
     description:
-      'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+      'Looking for a fun way to get fit? Burn calories while unleashing your fury during the heart pumping & challenging  classes!',
     link: '/',
     icon: 'google'
   },
   {
     title: 'Feature 3',
-    description:
-      'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Find your flow and channel your inner warrior',
     link: '/',
     icon: 'gitHub'
   },
   {
     title: 'Feature 4',
     description:
-      'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+      'Protect yourself and your loved ones with the power of martial arts',
     link: '/',
     icon: 'laptop'
   },
   {
     title: 'Feature 5',
-    description:
-      'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Transform Your Day-to-Day Life and discover a new side.',
     link: '/',
     icon: 'user'
   },
   {
     title: 'Feature 6',
     description:
-      'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+      'I’ve lost weight, gained strength, and found a community that inspires me every day.',
     link: '/',
     icon: 'copy'
   }
@@ -99,52 +96,40 @@ export const features: FeatureLdg[] = [
 
 export const testimonials: TestimonialType[] = [
   {
-    name: 'John Doe',
-    job: 'Full Stack Developer',
-    image: 'https://randomuser.me/api/portraits/men/1.jpg',
-    review:
-      "The next-saas-stripe-starter repo has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend next-saas-stripe-starter to any developer."
+    name: 'Thai L.',
+    job: 'Entrepreneur',
+    image: '/_static/avatars/thai-yelp.jpg',
+    review: `Cool place to train. Very beginner friendly. The coaches and fighters make you feel welcomed. You get a good workout and learn a lot about fighting. I also like that it is kept very clean in there. 5 stars!`
   },
   {
-    name: 'Alice Smith',
-    job: 'UI/UX Designer',
-    image: 'https://randomuser.me/api/portraits/women/2.jpg',
-    review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work."
-  },
-  {
-    name: 'David Johnson',
-    job: 'DevOps Engineer',
-    image: 'https://randomuser.me/api/portraits/men/3.jpg',
-    review:
-      'Thanks to next-saas-stripe-starter, I was able to streamline the entire process and get payments up and running in no time. '
-  },
-  {
-    name: 'Michael Wilson',
-    job: 'Project Manager',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-    review:
-      "I'm impressed by the quality of code and clear documentation of next-saas-stripe-starter. Kudos to the team!"
-  },
-  {
-    name: 'Sophia Garcia',
-    job: 'Data Analyst',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-    review:
-      'next-saas-stripe-starter provided me with the tools I needed to efficiently manage user data. Thank you so much!'
-  },
-  {
-    name: 'Emily Brown',
+    name: 'Mike T',
     job: 'Marketing Manager',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-    review:
-      "next-saas-stripe-starter has been an invaluable asset in my role as a marketing manager. With its seamless integration with Stripe, I've been able to launch targeted marketing campaigns with built-in payment functionality, allowing us to monetize our products and services more effectively."
+    image: '/_static/avatars/mike_avatar.png',
+    review: `Coach Larry is awesome. He breaks it down in simple yet effective techniques that builds confidence. What I like most about the class are the students. No ego, friendly, and fun.`
   },
   {
-    name: 'Jason Stan',
-    job: 'Web Designer',
-    image: 'https://randomuser.me/api/portraits/men/9.jpg',
+    name: 'Qua W.',
+    job: 'Business Owner',
+    image: '/_static/avatars/kwa.jpeg',
+    review: `Larry's kickboxing classes at Nerds Fighting are seriously something else. He's got this way of breaking down martial arts that makes it super approachable for everyone. You walk in, and whether you're new or you've been doing this for years, you immediately feel welcome. The whole "meathead" stereotype? Yeah, that's not a thing here.
+
+      Larry's built this space where you can geek out about technique like you're analyzing a Starcraft match, and then jump into sparring like you're Saenchai in a Muay Thai training camp. It's crazy--one minute you're talking Magic the Gathering, and the next you're trading kicks. What makes this place special is how it blends martial arts with nerd culture in a way that just works.
+
+      Everyone, no matter their age or background, feels like they belong here. It's not just about getting in shape; it's about the community. If you want a place where you can be yourself, talk nerdy, and still train hard, Nerds Fighting is the spot. I highly recommend!`
+  },
+
+  {
+    name: 'Richard H.',
+    job: 'Engineer & Project Owner - Abundance Oasis',
+    image: '/_static/avatars/huygis.jpg',
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work."
+      'Great way to learn self defense in an awesome engaging coach and small group of supportive friends.'
   }
+  // {
+  //   name: 'Sophia Garcia',
+  //   job: 'Data Analyst',
+  //   image: 'https://randomuser.me/api/portraits/women/6.jpg',
+  //   review:
+  //     'next-saas-stripe-starter provided me with the tools I needed to efficiently manage user data. Thank you so much!'
+  //
 ]

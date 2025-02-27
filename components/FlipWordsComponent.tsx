@@ -4,23 +4,25 @@ import { FlipWords } from '@/components/ui/flip-words'
 
 export function FlipWordsComponent() {
   const words = [
-    'Chill & Safe Environment',
-    'No Meatheads, No Bullies',
-    'Learn Proper Technique & Form',
-    'Improve Cardio & Conditioning',
-    'Develop Toughness & Resilience',
-    'Increase Strategy & Fight-IQ',
-    'Become Confident in Yourself'
+    // 'Safe and Welcoming Environment',
+    // 'No Bullies, No Meatheads',
+    // 'Workouts made for maximum fun',
+    // 'Burn Calories and get ripped',
+    // 'Learn to Strike and Look good doing it',
+    // 'Improve Cardio & Conditioning',
+    // 'Gain Confidence in Yourself'
+    'Be Bold',
+    'Be New',
+    'Be You',
+    'At NERDS FIGHTING'
   ]
 
   return (
-    <div className='flex w-full flex-col items-center justify-center gap-6 px-4'>
-      <div className='mx-auto flex w-96 items-center justify-center'>
-        <p className='text-center font-heading text-xl font-bold text-emerald-400 dark:text-emerald-500'>
-          +++
-        </p>
-        <FlipWords words={words} />
-      </div>
+    <div className='flex h-10 w-96 items-center justify-center'>
+      <p className='text-center font-heading text-2xl font-bold text-emerald-600 dark:text-emerald-500'>
+        +++
+      </p>
+      <FlipWords words={words} />
     </div>
   )
 }
