@@ -34,7 +34,7 @@ export default function GradualSpacing({
             variants={framerProps}
             transition={{ duration, delay: i * delayMultiple }}
             className={cn(
-              'font-awakenning text-5xl tracking-widest text-white drop-shadow-sm sm:text-6xl md:text-7xl lg:text-9xl',
+              'font-crosstown text-5xl uppercase tracking-widest text-white drop-shadow-sm sm:text-6xl md:text-7xl lg:text-9xl',
               className
             )}
           >

@@ -18,7 +18,7 @@ export function FlipWordsComponent() {
 
   return (
     <div className='flex h-10 w-96 items-center justify-center'>
-      <p className='text-center font-orbitron text-2xl font-semibold text-white'>
+      <p className='text-center font-orbitron text-2xl font-semibold uppercase text-white'>
         BE
       </p>
 

@@ -1,6 +1,7 @@
 'use client'
 
 import { useContext } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
 import { useSession } from 'next-auth/react'
@@ -44,12 +45,17 @@ export function NavBar({ scroll = false }: NavBarProps) {
       }`}
     >
       <MaxWidthWrapper
-        className='flex h-16 items-center justify-between py-4'
+        className='container flex h-16 items-center justify-between py-4'
         large={documentation}
       >
         <div className='flex gap-6 md:gap-10'>
           <Link href='/' className='flex items-center space-x-1.5'>
-            <p className='text-2xl font-black'>O</p>
+            <Image
+              src='/_static/nerdslogo1.png'
+              alt='Nerds Fighting Logo'
+              width={50}
+              height={50}
+            />
             <span className='font-urban text-xl font-bold'>
               {siteConfig.name}
             </span>

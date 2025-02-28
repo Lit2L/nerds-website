@@ -58,7 +58,7 @@ export default async function HeroLanding() {
                 'gap-2'
               )}
             >
-              <span>Go Pricing</span>
+              <span>Free 2-Day Pass</span>
               <Icons.arrowRight className='size-4' />
             </Link>
             <Link
@@ -76,7 +76,7 @@ export default async function HeroLanding() {
             >
               <Icons.gitHub className='mr-2 size-4' />
               <p>
-                <span className='hidden sm:inline-block'>Star on</span>
+                <span className='hidden sm:inline-block'>Members Area</span>
               </p>
             </Link>
           </div>

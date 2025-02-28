@@ -83,7 +83,7 @@ export const FlipWords = ({
               delay: index * 0.08,
               duration: 0.4
             }}
-            className='font-orbitron text-2xl'
+            className='font-orbitron text-2xl uppercase'
           >
             {letter}
           </motion.span>

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import FeatureCarouselDemo from '../FeatureCarouselDemo'
+import { FeatureCarouselDemo } from '../FeatureCarouselDemo'
 import { Icons } from '../shared/icons'
 import { Button } from '../ui/button'
 

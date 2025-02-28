@@ -37,6 +37,8 @@ interface CardProps {
 }
 
 interface ImageSet {
+  welcomeimg1: StaticImageData | string
+  welcomeimg2: StaticImageData | string
   step1dark1?: StaticImageData | string
   step1dark2?: StaticImageData | string
   step1light1: StaticImageData | string
@@ -52,6 +54,8 @@ interface ImageSet {
 }
 
 interface FeatureCarouselProps extends CardProps {
+  welcomeimg1Class?: string
+  welcomeimg2Class?: string
   step1img1Class?: string
   step1img2Class?: string
   step2img1Class?: string
@@ -82,34 +86,40 @@ const TOTAL_STEPS = 5
 
 const steps = [
   {
-    id: '1',
+    id: '0',
     name: 'Welcome',
     title: 'Welcome to Nerds FIGHTING',
     description: 'Feature 1 description  '
   },
   {
-    id: '2',
+    id: '1',
     name: 'Step 1',
     title: 'Step 1',
+    description: 'Feature 1 description  '
+  },
+  {
+    id: '2',
+    name: 'Step 2',
+    title: 'Step 2',
     description: 'Walk thru the door'
   },
   {
     id: '3',
-    name: 'Step 2',
-    title: 'Feature 2',
+    name: 'Step 3',
+    title: 'Feature 3',
     description: 'Feature 3 description'
   },
   {
     id: '4',
-    name: 'Step 3',
-    title: 'Feature 3',
+    name: 'Step 4',
+    title: 'Feature 4',
     description: 'Feature 4 description'
   },
   {
     id: '5',
-    name: 'Step 4',
-    title: 'Feature 4',
-    description: 'Feature 4 description'
+    name: 'Step 5',
+    title: 'Feature 5',
+    description: 'Feature 5 description'
   }
 ] as const
 
@@ -530,6 +540,10 @@ function Steps({
 }
 
 const defaultClasses = {
+  welcomeimg1:
+    'pointer-events-none w-full border border-border-100/10 dark:border-border-700/50 rounded-2xl transition-all duration-500 overflow-hidden',
+  welcomeimg2:
+    'pointer-events-none w-full border border-border-100/10 dark:border-border-700/50 rounded-2xl transition-all duration-500 overflow-hidden',
   step1img1:
     'pointer-events-none w-[50%] border border-border-100/10 transition-all duration-500 dark:border-border-700/50 rounded-2xl',
   step1img2:
@@ -551,6 +565,8 @@ const defaultClasses = {
  */
 export function FeatureCarousel({
   image,
+  welcomeimg1Class = defaultClasses.welcomeimg1,
+  welcomeimg2Class = defaultClasses.welcomeimg2,
   step1img1Class = defaultClasses.step1img1,
   step1img2Class = defaultClasses.step1img2,
   step2img1Class = defaultClasses.step2img1,
@@ -592,6 +608,36 @@ export function FeatureCarousel({
             >
               <AnimatedStepImage
                 alt={image.alt}
+                className={clsx(welcomeimg1Class)}
+                src={image.welcomeimg1}
+                preset='slideInLeft'
+              />
+              <AnimatedStepImage
+                alt={image.alt}
+                className={clsx(welcomeimg1Class)}
+                src={image.welcomeimg2}
+                preset='slideInRight'
+                delay={0.1}
+              />
+            </motion.div>
+          )
+        case 1:
+          /**
+           * Layout: Two images side by side
+           * - Left image (step1img1): 50% width, positioned left
+           * - Right image (step1img2): 60% width, positioned right
+           * Animation:
+           * - Left image slides in from left
+           * - Right image slides in from right with 0.1s delay
+           * - Both use spring animation for smooth motion
+           */
+          return (
+            <motion.div
+              className='relative h-full w-full'
+              onAnimationComplete={handleAnimationComplete}
+            >
+              <AnimatedStepImage
+                alt={image.alt}
                 className={clsx(step1img1Class)}
                 src={image.step1light1}
                 preset='slideInLeft'
@@ -605,7 +651,7 @@ export function FeatureCarousel({
               />
             </motion.div>
           )
-        case 1:
+        case 2:
           /**
            * Layout: Two images with overlapping composition
            * - First image (step2img1): 50% width, positioned left
@@ -635,7 +681,7 @@ export function FeatureCarousel({
               />
             </motion.div>
           )
-        case 2:
+        case 3:
           /**
            * Layout: Single centered image
            * - Full width image (step3img): 90% width, centered
@@ -653,7 +699,7 @@ export function FeatureCarousel({
               onAnimationComplete={handleAnimationComplete}
             />
           )
-        case 3:
+        case 4:
           /**
            * Layout: Final showcase layout
            * - Container: Centered, 60% width on desktop
