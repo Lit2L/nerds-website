@@ -87,8 +87,8 @@ const TOTAL_STEPS = 5
 const steps = [
   {
     id: '0',
-    name: 'Welcome',
-    title: 'Welcome to Nerds FIGHTING',
+    name: 'Introduction',
+    title: 'Welcome to our NERDS FIGHTING Dojo',
     description: 'Feature 1 description  '
   },
   {

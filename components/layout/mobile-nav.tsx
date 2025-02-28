@@ -13,7 +13,7 @@ import { cn } from '@/lib/utils'
 import { DocsSidebarNav } from '@/components/docs/sidebar-nav'
 import { Icons } from '@/components/shared/icons'
 
-import { ModeToggle } from './mode-toggle'
+import { ModeToggle } from '../ui/mode-toggle'
 
 export function NavMobile() {
   const { data: session } = useSession()

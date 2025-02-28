@@ -13,13 +13,13 @@ export function FeatureCarouselDemo() {
   return (
     <div className='mx-auto w-full max-w-5xl'>
       <div className='rounded-[34px] bg-neutral-700 p-2'>
-        <div className='relative z-10 grid w-full rounded-[28px] bg-neutral-950 p-2'>
+        <div className='relative z-10 grid w-full rounded-[28px] border-4 bg-neutral-950 p-2'>
           <FeatureCarousel
             title='Interactive Feature Demo'
             description='Showcase your features with smooth animations and transitions'
             // Example classes for responsive layout
             welcomeimg1Class={cn(
-              'pointer-events-none w-full  border border-stone-100/10 dark:border-stone-700/50 rounded-t-[24px] transition-all duration-500 ', // Base classes
+              'pointer-events-none w-full absolute border border-stone-100/10 dark:border-stone-700/50 rounded-t-[24px] transition-all duration-500 ', // Base classes
               'left-[5%] top-[50%] md:top-[30%] md:left-[68px]', // Responsive classes,
               'md:group-hover:translate-y-2' // Hover classes
             )}

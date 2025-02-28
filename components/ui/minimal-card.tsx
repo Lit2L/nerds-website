@@ -81,18 +81,24 @@ const MinimalCardDescription = React.forwardRef<
 ))
 MinimalCardDescription.displayName = 'MinimalCardDescription'
 
-const MinimalCardContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn('rounded-lg p-6', className)} {...props} />
-  )
-)
+const MinimalCardContent = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div ref={ref} className={cn('rounded-lg p-6', className)} {...props} />
+))
 MinimalCardContent.displayName = 'MinimalCardContent'
 
-const MinimalCardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn('flex items-center p-6 pt-0', className)} {...props} />
-  )
-)
+const MinimalCardFooter = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn('flex items-center p-6 pt-0', className)}
+    {...props}
+  />
+))
 MinimalCardFooter.displayName = 'MinimalCardFooter'
 
 // Exports

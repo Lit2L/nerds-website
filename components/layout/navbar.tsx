@@ -40,23 +40,23 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
+      className={`fixed top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
         scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b'
       }`}
     >
       <MaxWidthWrapper
-        className='container flex h-16 items-center justify-between py-4'
+        className='flex h-14 items-center justify-between py-4'
         large={documentation}
       >
         <div className='flex gap-6 md:gap-10'>
           <Link href='/' className='flex items-center space-x-1.5'>
             <Image
+              alt={siteConfig.name}
               src='/_static/nerdslogo1.png'
-              alt='Nerds Fighting Logo'
-              width={50}
-              height={50}
+              width={40}
+              height={40}
             />
-            <span className='font-urban text-xl font-bold'>
+            <span className='font-crosstown text-xl font-bold'>
               {siteConfig.name}
             </span>
           </Link>
@@ -94,11 +94,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 <Icons.search className='size-6 text-muted-foreground' />
               </div>
               <div className='flex space-x-4'>
-                <Link
-                  href={siteConfig.links.github}
-                  target='_blank'
-                  rel='noreferrer'
-                >
+                <Link href='/' target='_blank' rel='noreferrer'>
                   <Icons.gitHub className='size-7' />
                   <span className='sr-only'>GitHub</span>
                 </Link>
