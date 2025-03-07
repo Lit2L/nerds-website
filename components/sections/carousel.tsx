@@ -27,7 +27,7 @@ export default function CarouselSection() {
                 <Button
                   variant='secondary'
                   size='sm'
-                  rounded='xl'
+                  // rounded='xl'
                   className='px-4'
                 >
                   <Link href='/' className='flex items-center gap-2'>

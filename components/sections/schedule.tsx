@@ -63,8 +63,8 @@ const classes = [
 
 export function Schedule() {
   return (
-    <section id='schedule' className='container'>
-      <div className='font-genos bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
+    <section id='#schedule' className='container'>
+      <div className='py-32 font-genos'>
         <MaxWidthWrapper>
           <HeaderSection
             label='Nerds Fighting'
@@ -82,12 +82,12 @@ export function Schedule() {
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
                       <MdSportsMartialArts className='size-6 text-white' />
-                      <h3 className='font-genos uppercase text-emerald-400 dark:text-green-300'>
+                      <h3 className='font-genos uppercase text-blue-400 dark:text-blue-300'>
                         {item.title}
                       </h3>
                     </div>
                   </CardTitle>
-                  <Separator className='my-1 bg-emerald-500' />
+                  <Separator className='my-1 bg-blue-500' />
 
                   <div className='flex flex-col items-center'>
                     {item.schedule.map((schedule) => (
@@ -95,7 +95,7 @@ export function Schedule() {
                         key={schedule.id}
                         className='flex w-full items-center justify-between border-b border-white/10'
                       >
-                        <Calendar className='w-1/16 mx-2 size-4 text-emerald-600 dark:text-emerald-500' />
+                        <Calendar className='w-1/16 mx-2 size-4 text-blue-600 dark:text-blue-500' />
                         <div
                           key={schedule.time}
                           className='flex w-full items-center justify-between py-1'
@@ -104,7 +104,7 @@ export function Schedule() {
                             {schedule.time}
                           </span>
 
-                          <p className='w-3/16 text-md font-genos m-1 flex font-bold capitalize tracking-wide text-neutral-300/90 dark:text-green-500'>
+                          <p className='w-3/16 text-md m-1 flex font-genos font-bold capitalize tracking-wide text-blue-600/90 dark:text-blue-400'>
                             {item.description}
                           </p>
                         </div>

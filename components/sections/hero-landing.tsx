@@ -23,8 +23,8 @@ export default async function HeroLanding() {
             className={cn(
               buttonVariants({
                 variant: 'default',
-                size: 'sm',
-                rounded: 'full'
+                size: 'sm'
+                // rounded: 'full'
               }),
               'px-4'
             )}
@@ -53,10 +53,7 @@ export default async function HeroLanding() {
             <Link
               href='/pricing'
               prefetch={true}
-              className={cn(
-                buttonVariants({ size: 'lg', rounded: 'full' }),
-                'gap-2'
-              )}
+              className={cn(buttonVariants({ size: 'lg' }), 'gap-2')}
             >
               <span>Free 2-Day Pass</span>
               <Icons.arrowRight className='size-4' />
@@ -68,8 +65,8 @@ export default async function HeroLanding() {
               className={cn(
                 buttonVariants({
                   variant: 'outline',
-                  size: 'lg',
-                  rounded: 'full'
+                  size: 'lg'
+                  // rounded: 'full'
                 }),
                 'px-5'
               )}

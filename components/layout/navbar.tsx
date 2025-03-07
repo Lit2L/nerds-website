@@ -40,23 +40,26 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
   return (
     <header
-      className={`fixed top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
+      className={`fixed top-0 z-40 flex h-20 w-full items-center justify-center bg-background/60 backdrop-blur-xl transition-all ${
         scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b'
       }`}
     >
       <MaxWidthWrapper
-        className='flex h-14 items-center justify-between py-4'
+        className='flex h-20 w-full items-center justify-between py-4'
         large={documentation}
       >
-        <div className='flex gap-6 md:gap-10'>
-          <Link href='/' className='flex items-center space-x-1.5'>
+        <div className='flex items-center gap-6 md:gap-10'>
+          <Link
+            href='/'
+            className='flex items-center justify-center space-x-1.5'
+          >
             <Image
               alt={siteConfig.name}
               src='/_static/nerdslogo1.png'
-              width={40}
-              height={40}
+              width={45}
+              height={45}
             />
-            <span className='font-crosstown text-xl font-bold'>
+            <span className='translate-y-1 font-awakenning text-xl font-bold tracking-wider'>
               {siteConfig.name}
             </span>
           </Link>
@@ -107,12 +110,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
               className='hidden md:block'
             >
-              <Button
-                className='gap-2 px-5'
-                variant='default'
-                size='sm'
-                rounded='full'
-              >
+              <Button className='gap-2 px-5' variant='default' size='sm'>
                 <span>Dashboard</span>
               </Button>
             </Link>
@@ -121,7 +119,6 @@ export function NavBar({ scroll = false }: NavBarProps) {
               className='hidden gap-2 px-5 md:flex'
               variant='default'
               size='sm'
-              rounded='full'
               onClick={() => setShowSignInModal(true)}
             >
               <span>Sign In</span>

@@ -48,17 +48,17 @@ interface LoadingCarouselProps {
 
 const defaultTips: Tip[] = [
   {
-    text: 'Backend snippets. Shadcn style headless components.. but for your backend.',
+    text: 'Step 1: Contact us or walk in to claim your free trial class from our available class schedule',
     image: '/_static/images/landscape/location.png',
     url: 'https://www.newcult.co/backend'
   },
   {
-    text: 'Create your first directory app today. AI batch scripts to process 100s of urls in seconds.',
+    text: 'Step 2: Come in 10 minutes early to get situated and comfortable before class starts.',
     image: '/_static/images/landscape/location.png',
     url: 'https://www.newcult.co/templates/cult-seo'
   },
   {
-    text: 'Cult landing page template. Framer motion, shadcn, and tailwind.',
+    text: 'Step 3: Cult landing page template. Framer motion, shadcn, and tailwind.',
     image: '/_static/images/landscape/location.png',
     url: 'https://www.newcult.co/templates/cult-landing-page'
   },

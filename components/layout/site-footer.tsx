@@ -10,11 +10,13 @@ import { ModeToggle } from '../ui/mode-toggle'
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
-    <footer className={cn('border-t', className)}>
+    <footer
+      className={cn('border-t bg-slate-600 dark:bg-slate-600', className)}
+    >
       <div className='container grid max-w-6xl grid-cols-2 gap-6 py-14 md:grid-cols-5'>
         {footerLinks.map((section) => (
           <div key={section.title}>
-            <span className='text-sm font-medium text-foreground'>
+            <span className='text-sm font-semibold text-slate-100 underline underline-offset-8'>
               {section.title}
             </span>
             <ul className='mt-4 list-inside space-y-3'>
@@ -22,7 +24,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
                 <li key={link.title}>
                   <Link
                     href={link.href}
-                    className='text-sm text-muted-foreground hover:text-primary'
+                    className='text-sm text-slate-200 hover:text-primary'
                   >
                     {link.title}
                   </Link>
