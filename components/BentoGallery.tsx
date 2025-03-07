@@ -22,7 +22,7 @@ const mediaItems = [
     title: 'Warm Up',
     desc: 'Loosen up your muscles',
     imageUrl: '/_static/images/landscape/mitts_andrew.png',
-    videoUrl: '/video/Mitts_coach.mp4',
+    videoUrl: '/video/mitts_coach.mp4',
     span: 'col-span-2'
   },
   {
@@ -30,7 +30,7 @@ const mediaItems = [
     title: 'Get to Work',
     desc: 'Push yourself',
     imageUrl: '/_static/images/landscape/coach1.png',
-    videoUrl: '/video/mike_mitts_edit.mp4',
+    videoUrl: '/video/mike_mitts.mp4',
     span: 'col-span-2'
   },
   {
