@@ -1,9 +1,9 @@
-import BentoGallery from '@/components/BentoGallery'
 import { MarqueeText } from '@/components/MarqueeText'
+import BentoGallery from '@/components/sections/BentoGallery'
 import HeroLanding from '@/components/sections/hero-landing'
 import { Schedule } from '@/components/sections/schedule'
 import Testimonials from '@/components/sections/testimonials'
-import Waitlist from '@/components/trial-class'
+import Waitlist from '@/components/waitlist'
 
 export default function IndexPage() {
   return (
@@ -11,14 +11,8 @@ export default function IndexPage() {
       <HeroLanding />
       <MarqueeText />
       <BentoGallery />
-      {/* <Features /> */}
       <Testimonials />
-      {/* <LoadingCarousel /> */}
-      {/* <VideosCarousel /> */}
-      {/* <FilmsRoll /> */}
       <Waitlist mode='light' />
-      {/* <FeatureCarouselDemo /> */}
-
       <Schedule />
     </div>
   )

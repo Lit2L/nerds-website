@@ -14,7 +14,7 @@ import GradualSpacing from '../ui/gradual-spacing'
 export default async function HeroLanding() {
   return (
     <section id='hero' className='min-h-screen w-full'>
-      <div className='relative z-10 h-[900px] w-full bg-black text-center'>
+      <div className='relative z-10 h-[900px] w-full bg-black/90 text-center'>
         <BgMediaDemo />
 
         <div className='z-40 flex h-full w-full flex-col items-center justify-center gap-20'>
@@ -43,7 +43,7 @@ export default async function HeroLanding() {
             className='max-w-2xl text-balance leading-normal text-slate-200 sm:text-xl sm:leading-8'
             style={{ animationDelay: '0.35s', animationFillMode: 'forwards' }}
           >
-            Contact us for more information on our classes, privates, and events
+            Contact us for more information on our privates, classes, and events
           </p>
 
           <div
@@ -51,7 +51,7 @@ export default async function HeroLanding() {
             style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}
           >
             <Link
-              href='/pricing'
+              href='/#waitlist'
               prefetch={true}
               className={cn(buttonVariants({ size: 'lg' }), 'gap-2')}
             >

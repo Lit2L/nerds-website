@@ -14,7 +14,7 @@ const classes = [
     title: 'Sunday',
     description: 'Muay Thai',
     attributes: 'Sparring, Muay Thai, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Sun', time: '6:00am - 7:30am' }]
+    schedule: [{ id: 1, day: 'Sun', time: '8:00am - 9:30am' }]
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ const classes = [
     title: 'Saturday',
     description: 'Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Friday', time: '6:00am - 7:30am' }]
+    schedule: [{ id: 1, day: 'Saturday', time: '8:00am - 9:30am' }]
   }
 ]
 
@@ -82,7 +82,7 @@ export function Schedule() {
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
                       <MdSportsMartialArts className='size-6 text-white' />
-                      <h3 className='font-genos uppercase text-blue-400 dark:text-blue-300'>
+                      <h3 className='font-genos uppercase text-slate-200 dark:text-slate-300'>
                         {item.title}
                       </h3>
                     </div>

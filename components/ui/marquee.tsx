@@ -28,10 +28,10 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
     {
       className,
       text,
-      repeat = 4,
+      repeat = 99,
       duration = 20,
       fontSize = 'lg',
-      strokeWidth = '1px',
+      strokeWidth = '2px',
       ...props
     },
     ref
@@ -65,7 +65,7 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
               <span
                 className={cn(
                   fontSizeClasses[fontSize],
-                  'px-4 font-bold text-transparent'
+                  'px-3 font-longslide font-bold text-blue-800'
                 )}
                 style={{
                   WebkitTextStroke: `${strokeWidth} ${isDark ? 'rgb(64 64 64)' : 'rgb(156 163 175)'}`

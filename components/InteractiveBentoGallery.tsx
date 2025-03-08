@@ -126,7 +126,7 @@ const InteractiveBentoGallery = ({
     <div className='container mx-auto max-w-4xl px-1 py-3'>
       <div className='mb-8 text-center'>
         <motion.h1
-          className='bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-2xl font-bold text-transparent dark:from-white dark:via-gray-200 dark:to-white sm:text-3xl md:text-4xl'
+          className='bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text font-orbitron text-2xl font-bold text-transparent dark:from-white dark:via-gray-200 dark:to-white sm:text-3xl md:text-4xl'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -134,7 +134,7 @@ const InteractiveBentoGallery = ({
           {title}
         </motion.h1>
         <motion.p
-          className='mt-2 text-sm text-gray-600 dark:text-gray-400'
+          className='mt-2 font-longslide text-xl text-gray-600 dark:text-gray-400'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
