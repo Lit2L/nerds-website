@@ -52,7 +52,7 @@ const MediaItem = ({
       />
 
       {/* Background Overlay */}
-      <div className='absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-300 hover:opacity-100' />
+      <div className='absolute inset-0 bg-black/30 opacity-30 transition-opacity duration-300 hover:opacity-100' />
 
       {/* Title & Description Overlay */}
       <div className='absolute inset-0 flex flex-col justify-end p-3 transition-opacity duration-300 hover:opacity-100'>

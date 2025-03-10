@@ -60,8 +60,8 @@ const mediaItems = [
   },
   {
     id: 8,
-    title: 'Warm Down and Finish up',
-    desc: 'Shadow Boxing',
+    title: 'Warm Down and Relax',
+    desc: 'Rinse and Repeat',
     imageUrl: '/_static/images/square/drill2.png',
     videoUrl: '/video/abs.mp4',
     span: 'col-span-2'
