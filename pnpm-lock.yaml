@@ -182,6 +182,9 @@ dependencies:
   prop-types:
     specifier: ^15.8.1
     version: 15.8.1
+  raster-react:
+    specifier: ^0.1.1
+    version: 0.1.1(react@18.3.1)
   react:
     specifier: 18.3.1
     version: 18.3.1
@@ -11274,6 +11277,14 @@ packages:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
     dependencies:
       safe-buffer: 5.2.1
+    dev: false
+
+  /raster-react@0.1.1(react@18.3.1):
+    resolution: {integrity: sha512-qo9jLGhod5iaPkmwd/q7ZUhy1yRwK2ya15i37A1hvAi9fv3tnfjUYk9JFf0CQt1Nd8LMaHeIvHYRMgLVazjivA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.3.1
     dev: false
 
   /react-day-picker@8.10.1(date-fns@3.6.0)(react@18.3.1):

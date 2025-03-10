@@ -3,57 +3,75 @@ import InteractiveBentoGallery from '../InteractiveBentoGallery'
 const mediaItems = [
   {
     id: 1,
-    title: 'Park Your Ride',
-    desc: 'Say hello',
+    title: 'Stop into Williams MMA Academy',
+    desc: 'Walk in and say hi',
     imageUrl: '/_static/images/landscape/location.png',
-    videoUrl: '/video/warmup1.mp4',
+    videoUrl: '/video/welcome.mp4',
     span: 'col-span-2'
   },
   {
     id: 2,
-    title: 'Step Inside',
-    desc: 'Start warming up',
+    title: 'Wrap-up, Shadowbox and Stretch',
+    desc: 'Relax and Loosen up',
     imageUrl: '/_static/images/square/empty.png',
-    videoUrl: '/video/warmup1.mp4',
+    videoUrl: '/video/shadowbox.mp4',
     span: 'col-span-2'
   },
   {
     id: 3,
     title: 'Warm Up',
-    desc: 'Loosen up your muscles',
-    imageUrl: '/_static/images/landscape/mitts_andrew.png',
-    videoUrl: '/video/warmup2.mp4',
+    desc: 'Get your blood flowing with our world famous warm-up',
+    imageUrl: '/_static/images/landscape/lines.png',
+    videoUrl: '/video/warmup1.mp4',
     span: 'col-span-2'
   },
   {
     id: 4,
-    title: 'Get to Work',
-    desc: 'Push yourself',
-    imageUrl: '/_static/images/landscape/coach1.png',
-    videoUrl: '/video/mike_mitts.mp4',
+    title: 'Practice Time',
+    desc: 'Push Yourself, Push your Team',
+    imageUrl: '/_static/images/landscape/team4.png',
+    videoUrl: '/video/bigclass.mp4',
     span: 'col-span-2'
   },
   {
     id: 5,
-    title: 'Push Your Teammates',
-    desc: 'Push your teammates',
-    imageUrl: '/_static/images/square/mitts1.png',
+    title: 'Learn from the Coach, Learn from your Team',
+    desc: 'Most Importantly, Work Together.',
+    imageUrl: '/_static/images/landscape/shield1.png',
     videoUrl: '/video/teaps.mp4',
     span: 'col-span-2'
   },
   {
     id: 6,
-    title: 'Find Your Rhythm, Find Your Flow',
-    desc: 'Work Together.',
-    imageUrl: '/_static/images/landscape/team4.png',
+
+    title: 'Find your Flow, Find your Rhythm',
+    desc: 'Shadow Boxing',
+    imageUrl: '/_static/images/landscape/coach1.png',
     videoUrl: '/video/shifting_coach_slowmo.mp4',
+    span: 'col-span-2'
+  },
+  {
+    id: 7,
+    title: 'Drill Techniques into Muscle Memory',
+    desc: 'Until Desired Results Are Achieved.',
+    imageUrl: '/_static/images/square/mitts1.png',
+    videoUrl: '/video/kwa11.mp4',
+    span: 'col-span-2'
+  },
+  {
+    id: 8,
+    title: 'Warm Down and Finish up',
+    desc: 'Shadow Boxing',
+    imageUrl: '/_static/images/square/drill2.png',
+    videoUrl: '/video/abs.mp4',
     span: 'col-span-2'
   }
 ]
 
 export default function BentoGallery() {
   return (
-    <div className='min-h-screen bg-transparent'>
+    <div className='relative min-h-screen w-full bg-transparent'>
+      <div className='bgImage' />
       <InteractiveBentoGallery
         mediaItems={mediaItems}
         title='The First Step is the Hardest'

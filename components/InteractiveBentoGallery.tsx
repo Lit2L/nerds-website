@@ -5,6 +5,8 @@ import { AspectRatio } from '@radix-ui/react-aspect-ratio'
 import { AnimatePresence, motion } from 'framer-motion'
 import { X } from 'lucide-react'
 
+import { cn } from '@/lib/utils'
+
 // Define the structure for media items
 interface MediaItemType {
   id: number
@@ -72,9 +74,11 @@ const MediaItem = ({
 // GalleryModal component for displaying selected media
 const GalleryModal = ({
   selectedItem,
+  handleOutsideClick,
   isOpen,
   onClose
 }: {
+  handleOutsideClick: (e: React.MouseEvent<HTMLDivElement>) => void
   selectedItem: MediaItemType
   isOpen: boolean
   onClose: () => void
@@ -105,6 +109,14 @@ const GalleryModal = ({
         >
           <X size={20} />
         </button>
+        <motion.div
+          onClick={handleOutsideClick}
+          className={cn(
+            'absolute left-0 top-0 z-10 h-full w-full bg-black opacity-0',
+            selectedItem?.id ? 'pointer-events-auto' : 'pointer-events-none'
+          )}
+          animate={{ opacity: selectedItem?.id ? 0.3 : 0 }}
+        />
       </motion.div>
     </>
   )
@@ -121,10 +133,22 @@ const InteractiveBentoGallery = ({
   description: string
 }) => {
   const [selectedItem, setSelectedItem] = useState<MediaItemType | null>(null)
+  const [lastSelectedItem, setLastSelectedItem] =
+    useState<MediaItemType | null>(null)
+
+  const handleClick = (item: MediaItemType) => {
+    setLastSelectedItem(selectedItem)
+    setSelectedItem(item)
+  }
+
+  const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    setLastSelectedItem(selectedItem)
+    setSelectedItem(null)
+  }
 
   return (
     <div className='container mx-auto max-w-4xl px-1 py-3'>
-      <div className='mb-8 text-center'>
+      <motion.div className='mb-8 text-center'>
         <motion.h1
           className='bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text font-orbitron text-2xl font-bold text-transparent dark:from-white dark:via-gray-200 dark:to-white sm:text-3xl md:text-4xl'
           initial={{ opacity: 0, y: 20 }}
@@ -141,11 +165,12 @@ const InteractiveBentoGallery = ({
         >
           {description}
         </motion.p>
-      </div>
+      </motion.div>
       <AnimatePresence mode='wait'>
         {selectedItem ? (
           <GalleryModal
             selectedItem={selectedItem}
+            handleOutsideClick={handleOutsideClick}
             isOpen={true}
             onClose={() => setSelectedItem(null)}
           />

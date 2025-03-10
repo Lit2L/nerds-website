@@ -56,7 +56,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                     transition={{ duration: 0.5 }}
                     className={`${mode === 'dark' ? 'text-white' : 'text-gray-800'} mb-4 text-3xl font-bold`}
                   >
-                    Get Your Free Class!
+                    Special Free Week Pass!!
                   </motion.h2>
                   <motion.p
                     initial={{ opacity: 0 }}
@@ -64,8 +64,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className={`${mode === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-6 text-sm`}
                   >
-                    Confirm your email to get a free class and we&apos;ll see
-                    you soon!
+                    Submit your email to claim your free week!.
                   </motion.p>
                 </div>
                 <motion.form
@@ -85,9 +84,9 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                   <motion.button
                     type='submit'
                     disabled={!isEmailValid}
-                    className={`rounded-r-full bg-slate-800 px-6 py-[6px] text-sm font-semibold text-white focus:outline-none ${isEmailValid ? 'cursor-pointer border border-zinc-300 hover:bg-opacity-90' : 'cursor-not-allowed'} ${!isEmailValid && 'border border-zinc-300'}`}
+                    className={`rounded-r-full bg-slate-800 px-6 py-[6px] text-sm font-semibold text-white focus:outline-none ${isEmailValid ? 'cursor-pointer border border-zinc-300 transition-all duration-300 hover:bg-sky-700' : 'cursor-not-allowed'} ${!isEmailValid && 'border border-zinc-300'}`}
                   >
-                    CLAIM FREE CLASS
+                    SUBMIT
                   </motion.button>
                 </motion.form>
               </div>
@@ -104,7 +103,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                   transition={{ duration: 0.5 }}
                   className={`${mode === 'dark' ? 'text-white' : 'text-gray-800'} mb-4 mt-8 text-2xl font-bold`}
                 >
-                  You are on the waitlist
+                  Nice! Your Free Class Is Waiting!
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -112,7 +111,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className={`${mode === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-6`}
                 >
-                  Thank you for using Serenity UI.
+                  One of our team members will reach out to you soon.
                   <br /> We&apos;ll keep you updated.
                 </motion.p>
                 <motion.div

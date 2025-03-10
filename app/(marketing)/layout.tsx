@@ -8,8 +8,7 @@ interface MarketingLayoutProps {
 
 export default function MarketingLayout({ children }: MarketingLayoutProps) {
   return (
-    <div className='relative flex min-h-screen w-full flex-col overflow-hidden pt-16'>
-      <div className='bgImage' />
+    <div className='relative flex min-h-screen w-full flex-col overflow-hidden pt-9'>
       <NavMobile />
       <NavBar scroll={true} />
       <main className='flex-1'>{children}</main>

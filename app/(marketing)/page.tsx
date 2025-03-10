@@ -7,7 +7,7 @@ import Waitlist from '@/components/waitlist'
 
 export default function IndexPage() {
   return (
-    <div className=''>
+    <div className='min-h-screen w-full'>
       <HeroLanding />
       <MarqueeText />
       <BentoGallery />
