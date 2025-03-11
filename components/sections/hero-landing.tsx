@@ -13,8 +13,8 @@ import GradualSpacing from '../ui/gradual-spacing'
 
 export default async function HeroLanding() {
   return (
-    <section id='hero' className='relative min-h-screen w-full'>
-      <div className='h-[900px] w-full text-center'>
+    <section id='hero' className='relative min-h-[800px] w-full'>
+      <div className='h-[800px] w-full text-center'>
         <BgMediaDemo />
 
         <div className='z-40 flex h-full w-full flex-col items-center justify-center gap-20'>

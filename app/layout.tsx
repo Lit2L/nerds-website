@@ -31,7 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body
         className={cn(
-          'min-h-screen w-full overflow-hidden font-sans antialiased',
+          'min-h-screen w-full font-sans antialiased',
           fontSans.variable,
           fontOrbitron.variable,
           fontHeading.variable,

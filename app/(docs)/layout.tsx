@@ -9,13 +9,12 @@ interface DocsLayoutProps {
 
 export default function DocsLayout({ children }: DocsLayoutProps) {
   return (
-    <div className='flex flex-col'>
+    <div className='flex w-full flex-col'>
       <NavMobile />
       <NavBar />
       <MaxWidthWrapper className='min-h-screen' large>
         {children}
       </MaxWidthWrapper>
-      <SiteFooter className='border-t' />
     </div>
   )
 }

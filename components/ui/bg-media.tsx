@@ -13,13 +13,13 @@ type MediaType = 'image' | 'video'
 
 // Update the cva call with these types
 const backgroundVariants = cva(
-  'relative h-screen max-h-[930px] w-full min-h-[500px] lg:min-h-[600px] ',
+  'relative h-screen max-h-[800px] w-full min-h-[500px] lg:min-h-[600px] ',
   {
     variants: {
       overlay: {
         none: '',
         light:
-          'before:absolute before:inset-0 before:bg-white before:opacity-30',
+          'before:absolute before:inset-0 before:bg-black before:opacity-30',
         dark: 'before:absolute before:inset-0 before:bg-black before:opacity-30'
       },
       type: {
@@ -28,7 +28,7 @@ const backgroundVariants = cva(
       }
     },
     defaultVariants: {
-      overlay: 'none',
+      overlay: 'dark',
       type: 'image'
     }
   }
@@ -43,7 +43,7 @@ interface BackgroundMediaProps {
 
 export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
   variant = 'light',
-  type = 'image',
+  type = 'video',
   src,
   alt = ''
 }) => {
@@ -73,7 +73,7 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
           ref={mediaRef}
           aria-hidden='true'
           muted
-          className='pointer-events-none absolute inset-0 h-full w-full overflow-hidden object-cover transition-opacity duration-300'
+          className='pointer-events-none absolute inset-0 h-[820px] w-full overflow-hidden object-cover transition-opacity duration-300'
           autoPlay
           loop
           playsInline
