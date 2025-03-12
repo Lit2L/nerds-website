@@ -63,7 +63,8 @@ const classes = [
 
 export function Schedule() {
   return (
-    <section id='#schedule' className='container'>
+    <section id='schedule' className='container relative h-full w-full border'>
+      {/* <div className='bgImage1' /> */}
       <div className='py-32 font-genos'>
         <MaxWidthWrapper>
           <HeaderSection
@@ -77,12 +78,12 @@ export function Schedule() {
               classes.map((item) => (
                 <Card
                   key={item.id}
-                  className='flex h-52 w-64 flex-col rounded-xl border-zinc-700 bg-zinc-900/95 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
+                  className='flex h-52 w-64 flex-col rounded-xl border-zinc-700 bg-zinc-900 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
                 >
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
                       <MdSportsMartialArts className='size-6 text-white' />
-                      <h3 className='font-genos uppercase text-slate-200 dark:text-slate-300'>
+                      <h3 className='font-orbitron uppercase text-slate-200 dark:text-slate-300'>
                         {item.title}
                       </h3>
                     </div>

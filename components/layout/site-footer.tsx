@@ -34,7 +34,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           </div>
         ))}
         <div className='col-span-full flex flex-col items-end sm:col-span-1 md:col-span-2'>
-          <NewsletterForm />
+          {/* <NewsletterForm /> */}
         </div>
       </div>
 
@@ -44,25 +44,25 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             Copyright &copy; 2024. All rights reserved.
           </span> */}
           <p className='text-left text-sm text-muted-foreground'>
-            Built by{' '}
+            Reviews on{' '}
             <Link
-              href={siteConfig.links.twitter}
+              href={siteConfig.links.instagram}
               target='_blank'
               rel='noreferrer'
               className='font-medium underline underline-offset-4'
             >
-              larryll
+              Yelp
             </Link>
-            . Hosted on{' '}
+            . Located at{' '}
             <Link
-              href='https://vercel.com'
+              href='https://williamsmma.com'
               target='_blank'
               rel='noreferrer'
               className='font-medium underline underline-offset-4'
             >
-              Vercel
+              Williams MMA Academy
             </Link>
-            . Illustrations by{' '}
+            {/* . Illustrations by{' '}
             <Link
               href='https://popsy.co'
               target='_blank'
@@ -70,18 +70,18 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               className='font-medium underline underline-offset-4'
             >
               Nerds
-            </Link>
+            </Link> */}
           </p>
 
           <div className='flex items-center gap-3'>
-            <Link
+            {/* <Link
               href={siteConfig.links.github}
               target='_blank'
               rel='noreferrer'
               className='font-medium underline underline-offset-4'
             >
               <Icons.gitHub className='size-5' />
-            </Link>
+            </Link> */}
             <ModeToggle />
           </div>
         </div>

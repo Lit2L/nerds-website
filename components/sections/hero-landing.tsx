@@ -62,7 +62,7 @@ export default async function HeroLanding() {
               <Icons.arrowRight className='size-4' />
             </Link>
             <Link
-              href={siteConfig.links.github}
+              href='/dashboard'
               target='_blank'
               rel='noreferrer'
               className={cn(

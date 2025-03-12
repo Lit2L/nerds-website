@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/miickasmt">
-    <img src="https://img.shields.io/twitter/follow/miickasmt?style=flat&label=miickasmt&logo=twitter&color=0bf&logoColor=fff" alt="larryll Twitter follower count" />
+  <a href="https://instagram.com/">
+    <img src="https://img.shields.io/instagram/follow/?style=flat&label=&logo=instagram&color=0bf&logoColor=fff" alt="larryll instagram follower count" />
   </a>
 </p>
 
@@ -77,7 +77,7 @@ https://github.com/larryll/next-saas-stripe-starter/assets/62285783/828a4e0f-30e
 ### Frameworks
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
-- [Auth.js](https://authjs.dev/) – Handle user authentication with ease with providers like Google, Twitter, GitHub, etc.
+- [Auth.js](https://authjs.dev/) – Handle user authentication with ease with providers like Google, instagram, GitHub, etc.
 - [Prisma](https://www.prisma.io/) – Typescript-first ORM for Node.js
 - [React Email](https://react.email/) – Versatile email framework for efficient and flexible email development
 
@@ -118,12 +118,12 @@ https://github.com/larryll/next-saas-stripe-starter/assets/62285783/828a4e0f-30e
 
 ## Author
 
-Created by [@miickasmt](https://twitter.com/miickasmt) in 2023, released under the [MIT license](https://github.com/shadcn/taxonomy/blob/main/LICENSE.md).
+Created by [@](https://instagram.com/) in 2023, released under the [MIT license](https://github.com/shadcn/taxonomy/blob/main/LICENSE.md).
 
 ## Credits
 
 This project was inspired by shadcn's [Taxonomy](https://github.com/shadcn-ui/taxonomy), Steven Tey’s [Precedent](https://github.com/steven-tey/precedent), and Antonio Erdeljac's [Next 13 AI SaaS](https://github.com/AntonioErdeljac/next13-ai-saas).
 
-- Shadcn ([@shadcn](https://twitter.com/shadcn))
-- Steven Tey ([@steventey](https://twitter.com/steventey))
-- Antonio Erdeljac ([@YTCodeAntonio](https://twitter.com/AntonioErdeljac))
+- Shadcn ([@shadcn](https://instagram.com/shadcn))
+- Steven Tey ([@steventey](https://instagram.com/steventey))
+- Antonio Erdeljac ([@YTCodeAntonio](https://instagram.com/AntonioErdeljac))

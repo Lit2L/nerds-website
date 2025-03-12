@@ -9,19 +9,19 @@ Blog posts can have multiple categories, authors and related posts.
 
 ### Create one author
 
-Blog posts can have **one or multiple authors**. <br /> Add a new object with **name, image url and twitter handle** to add a new author to your blog.
+Blog posts can have **one or multiple authors**. <br /> Add a new object with **name, image url and instagram handle** to add a new author to your blog.
 
 ```ts title="config/blog.ts" {7-11}
 export const BLOG_AUTHORS = {
   larryll: {
     name: 'larryll',
     image: '/_static/avatars/larryll.png',
-    twitter: 'miickasmt'
+    instagram: ''
   },
   newauthor: {
     name: 'shadcn',
     image: '/_static/avatars/shadcn.jpeg',
-    twitter: 'shadcn'
+    instagram: 'shadcn'
   }
 }
 ```

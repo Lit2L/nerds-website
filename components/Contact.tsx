@@ -22,7 +22,7 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false)
 
   return (
-    <div className='w-full py-20 lg:py-40'>
+    <section id='contact' className='w-full py-20 lg:py-40'>
       <div className='container mx-auto max-w-6xl'>
         <div className='grid gap-10 lg:grid-cols-2'>
           <div className='flex flex-col gap-6'>
@@ -118,7 +118,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

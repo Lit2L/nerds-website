@@ -30,8 +30,8 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
       text,
       repeat = 99,
       duration = 20,
-      fontSize = 'lg',
-      strokeWidth = '2px',
+      fontSize = 'sm',
+      strokeWidth = '3px',
       ...props
     },
     ref

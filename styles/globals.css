@@ -105,6 +105,22 @@
   opacity: 0.1;
 }
 
+.bgImage1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/_static/backgrounds/bg5.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-layer: fill;
+  opacity: 0.06;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -128,4 +144,12 @@
   z-index: -1;
   content: '';
   inset: -1px;
+}
+
+.box-button {
+  border-radius: 50px;
+  background: linear-gradient(225deg, #80212c, #982834);
+  box-shadow:
+    -20px 20px 60px #791f2a,
+    20px -20px 60px #a32b38;
 }

@@ -19,11 +19,11 @@ export const BLOG_AUTHORS = {
   larryll: {
     name: 'larryll',
     image: '/_static/avatars/larryll.png',
-    twitter: 'miickasmt'
+    instagram: ''
   },
   shadcn: {
     name: 'shadcn',
     image: '/_static/avatars/shadcn.jpeg',
-    twitter: 'shadcn'
+    instagram: 'shadcn'
   }
 }

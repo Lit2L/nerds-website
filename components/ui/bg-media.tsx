@@ -42,7 +42,7 @@ interface BackgroundMediaProps {
 }
 
 export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
-  variant = 'light',
+  variant = 'dark',
   type = 'video',
   src,
   alt = ''
@@ -73,7 +73,7 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
           ref={mediaRef}
           aria-hidden='true'
           muted
-          className='pointer-events-none absolute inset-0 h-[820px] w-full overflow-hidden object-cover transition-opacity duration-300'
+          className='pointer-events-none absolute inset-0 h-[800px] w-full overflow-hidden object-cover transition-opacity duration-300'
           autoPlay
           loop
           playsInline
@@ -99,7 +99,7 @@ export const BackgroundMedia: React.FC<BackgroundMediaProps> = ({
       {type === 'video' && (
         <button
           aria-label={isPlaying ? 'Pause video' : 'Play video'}
-          className='absolute bottom-4 right-4 z-50 bg-gray-900 px-4 py-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2'
+          className='absolute bottom-4 right-4 z-50 bg-transparent px-4 py-2 text-transparent hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2'
           onClick={toggleMediaPlay}
         >
           {isPlaying ? 'Pause' : 'Play'}

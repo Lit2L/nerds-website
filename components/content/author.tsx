@@ -26,7 +26,7 @@ export default async function Author({
     />
   ) : (
     <Link
-      href={`https://twitter.com/${authors[username].twitter}`}
+      href={`https://instagram.com/${authors[username].instagram}`}
       className='group flex w-max items-center space-x-2.5'
       target='_blank'
       rel='noopener noreferrer'
@@ -46,7 +46,7 @@ export default async function Author({
           {authors[username].name}
         </p>
         <p className='text-sm text-muted-foreground'>
-          @{authors[username].twitter}
+          @{authors[username].instagram}
         </p>
       </div>
     </Link>

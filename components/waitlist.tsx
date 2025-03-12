@@ -40,12 +40,15 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
   const isEmailValid = email.trim() !== '' && email.includes('@')
 
   return (
-    <div id='waitlist' className='flex items-center justify-center py-20'>
+    <div
+      id='waitlist'
+      className='flex items-center justify-center border py-20 font-orbitron'
+    >
       <InView triggerOnce threshold={0.5}>
         {({ inView, ref }) => (
           <div
             ref={ref}
-            className={`${mode === 'dark' ? 'border border-zinc-600 bg-black' : 'bg-white'} mx-auto w-full max-w-md rounded-xl ${submitted ? 'p-1' : 'p-6'} z-50`}
+            className={`${mode === 'dark' ? 'border border-zinc-600 bg-black' : 'bg-white'} mx-auto w-full max-w-xl rounded-xl ${submitted ? 'p-1' : 'p-6'} font-orbitron' z-50`}
           >
             {!submitted ? (
               <div>
@@ -56,7 +59,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                     transition={{ duration: 0.5 }}
                     className={`${mode === 'dark' ? 'text-white' : 'text-gray-800'} mb-4 text-3xl font-bold`}
                   >
-                    Special Free Week Pass!!
+                    Try a Class Free!
                   </motion.h2>
                   <motion.p
                     initial={{ opacity: 0 }}
@@ -64,7 +67,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className={`${mode === 'dark' ? 'text-gray-400' : 'text-gray-500'} mb-6 text-sm`}
                   >
-                    Submit your email to claim your free week!.
+                    Submit your email to claim your free pass
                   </motion.p>
                 </div>
                 <motion.form
@@ -76,7 +79,7 @@ const Waitlist: React.FC<Props> = ({ mode }) => {
                 >
                   <input
                     type='email'
-                    placeholder='IAMNERD@NERD.com'
+                    placeholder='TheRealGoku@nerdsfighting.com'
                     className='focus:shadow-outline w-full flex-1 appearance-none rounded-l-full border border-gray-300 bg-white px-4 py-2 text-sm leading-tight text-gray-700 focus:outline-none'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
