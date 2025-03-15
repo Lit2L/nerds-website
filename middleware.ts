@@ -1,1 +1,14 @@
-export { auth as middleware } from '@/auth'
+import { NextResponse } from 'next/server'
+import { auth } from '@/auth' // Import only auth helpers, NOT Prisma
+
+export async function middleware(req) {
+  const session = await auth()
+
+  if (!session) {
+    return NextResponse.redirect(new URL('/login', req.url))
+  }
+
+  return NextResponse.next()
+}
+
+export const config = { matcher: ['/dashboard/:path*'] }

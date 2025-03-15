@@ -3,7 +3,7 @@ import Image from 'next/image'
 function Logo() {
   return (
     <Image
-      src='/Group10.png'
+      src='/_static/logo-1.png'
       alt='Nerds Kickboxing Club'
       width={300}
       height={200}

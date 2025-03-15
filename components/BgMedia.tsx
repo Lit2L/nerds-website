@@ -6,7 +6,7 @@ export function BgMediaDemo() {
       <BackgroundMedia
         type='video'
         variant='dark'
-        src='https://hm2v1jwhss.ufs.sh/f/6Zw2kVOf5iZUQ3vSyHdFbleQ9ZChJkgSMNqx2ArXvtOfI6dV'
+        src='/video/mike_mitts.mp4'
       />
     </div>
   )
